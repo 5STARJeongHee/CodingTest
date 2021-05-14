@@ -36,7 +36,8 @@ def quick_sort_short(array):
     left_side = [x for x in tail if x <= pivot] # 분할된 왼쪽 부분
     right_side = [x for x in tail if x > pivot] # 분할된 오른쪽 부분
 
-    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+    return quick_sort_short(left_side) + [pivot] + quick_sort_short(right_side)
 
-quick_sort(array, 0, len(array) -1)
+# quick_sort(array, 0, len(array) -1)
+array = quick_sort_short(array)
 print(array)
