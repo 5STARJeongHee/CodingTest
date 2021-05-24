@@ -43,16 +43,16 @@ def perm(lst,n):
         #([2] + permutation([1,3,4],1)) and ([3] + permutation([1,2,4],1)) and
         #([4] + permutation([1,2,3],1))
         
-		for i in range(len(lst)):
+		for i in range(len(lst)): # i는 선택된 수의 index
 			temp = [i for i in lst]
-			temp.remove(lst[i])
-			for p in perm(temp,n-1):
-				ret.append([lst[i]]+p)
+			temp.remove(lst[i]) # 선택된 숫자는 제외하고
+			for p in perm(temp,n-1): # 나머지에서 고름
+				ret.append([lst[i]]+p) # 현제 선택된 숫자의 뒤에 나머지에서 고른 수열을 나열
 
 	return ret
 
-    #dfs 구현 방식
-    def dfs_perm(lst,n):
+#dfs 구현 방식
+def dfs_perm(lst,n):
 	ret = []
 	idx = [i for i in range(len(lst))]
 
@@ -74,3 +74,8 @@ def perm(lst,n):
 				else:
 					stack.append(temp)
 	return ret
+
+
+k = [i for i in range(1,4+1)]
+
+print(perm(k, 4))
