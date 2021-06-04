@@ -1,3 +1,5 @@
+# 스도쿠 문제 numpy로 풀면 더 편할거 같아서 해보았는데
+# 실제 코테에서는 numpy를 못쓴다...
 import numpy as np
 
 sudoku = []

@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/2580
 def check(m,y,x,d):
     x_group = x//3
     y_group = y//3

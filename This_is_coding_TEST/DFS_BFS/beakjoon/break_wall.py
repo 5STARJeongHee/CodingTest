@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/2206
 from collections import deque
 import copy
 import sys

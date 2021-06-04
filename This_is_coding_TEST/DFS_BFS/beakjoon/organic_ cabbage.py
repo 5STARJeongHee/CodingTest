@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/1012
 import sys
 sys.setrecursionlimit(10000)
 test_case = int(input())

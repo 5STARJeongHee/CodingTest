@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/7576
 from collections import deque
 def bfs(g,s_list):
     x_dir = [0,0,1,-1]

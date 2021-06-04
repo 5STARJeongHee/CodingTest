@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/15650
 N,M = map(int, input().split())
 
 k = [i for i in range(1,N+1)]
