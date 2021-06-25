@@ -22,9 +22,9 @@ for _ in range(m):
     graph[a][b] = c
 
 # 점화식에 따라 플로이드 워셜 알고리즘 수행
-for k in range(1, n+1):
-    for a in range(1, n+1):
-        for b in range(1, n+1):
+for k in range(1, n+1): # 어딜 거치는 정점
+    for a in range(1, n+1): # 현제 정점
+        for b in range(1, n+1): # 다음 정점
             graph[a][b] = min(graph[a][b],graph[a][k] + graph[k][b])
 
 # 결과 출력
